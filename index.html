@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Mini Calculator</title>
     <link rel="stylesheet" href="style.css">
-</head>
 </head>
 <body>
     <div class="calculator">
-         <!-- Screen for the numbers -->
-        <input type="text" class="display" id="display" disabled>
-        <!-- This starts the grid for your buttons -->
-        <div class="button" id="buttons">       
-               <!-- Your buttons will be built inside here using JavaScript -->
+        <header class="calculator-header">
+            <h1>Mini Calculator</h1>
+        </header>
+
+        <div class="display-area">
+            <input type="text" class="display" id="display" value="0" disabled aria-label="Calculator display">
+        </div>
+
+        <div id="buttons" class="buttons"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
